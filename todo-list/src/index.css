@@ -1,0 +1,148 @@
+/* Estilos globais do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Aumentando a largura do container */
+  width: 100%;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Formulário de adicionar uma tarefa */
+form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de tarefas */
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Comentário: Removido estilo para tarefas completadas
+li.completed {
+  /* Removido o estilo para tarefas completadas */
+  /* background-color: #d4edda; */
+  /* text-decoration: line-through; */
+  /* color: #6c757d; *
+} */
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ajuste para evitar quebra de texto */
+li .task-title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0.5rem;
+  font-size: 1rem; /* Aumentando o tamanho do texto */
+}
+
+/* Botões dentro da lista de tarefas */
+li button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.75rem; /* Definindo tamanhos fixos para os botões */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+li button:hover {
+  background-color: #218838;
+}
+
+li button.delete {
+  background-color: #dc3545;
+}
+
+li button.delete:hover {
+  background-color: #c82333;
+}
+
+li button.edit {
+  background-color: #ffc107;
+}
+
+li button.edit:hover {
+  background-color: #e0a800;
+}
+
+/* Input de edição */
+li input[type="text"] {
+  flex: 1;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
